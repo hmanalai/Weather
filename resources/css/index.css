@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  width: 80%;
+  height: 450px;
+  position: relative;
+  margin: 100px auto;
+}
+
+.btn-box {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.btn-box button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  margin-right: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-box .fas {
+  margin-right: 20px;
+}
+
+.btn-box button:hover .fas{
+  color: 	#1E90FF;
+}
+
+.content-right img{
+  width: 350px;
+  }
+
+.container {
+  align-items: center;
+  margin: 5% auto;
+}
+
+.content-left {
+  float: left;
+  width: 47%;
+}
+
+.content-left p {
+  font-size: 13px;
+  padding: 30px 0;
+}
+
+.content-right {
+  float: right;
+  width: 47%;
+  text-align: center;
+}
