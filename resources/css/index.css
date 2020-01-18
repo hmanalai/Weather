@@ -58,4 +58,31 @@
   float: right;
   width: 47%;
   text-align: center;
+  margin-top: 30px;
+}
+
+#info-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#recipe-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#city {
+  margin-left: 14px;
+}
+
+#search_city {
+  margin-left: 10px;
+}
+
+#recipes {
+  margin-left: 14px;
+}
+
+#search_recipe {
+  margin-left: 10px;
 }

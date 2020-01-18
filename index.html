@@ -1,27 +1,49 @@
 <html>
   <head>
-    <title>Title</title>
+    <title>Weather & Food</title>
     <link type="text/css" rel="stylesheet" href="resources/css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src='resources/js/index.js'></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
     <div class="hero">
       <div class="btn-box">
         <i class="fas fa-sun-cloud"></i>
         <button id="weather"><i class="fas fa-cloud-sun"></i> Weather</button>
-        <button id = "places"><i class="fas fa-map-marked-alt"></i> Places</button>
-        <button id = "restaurants"><i class="fas fa-utensils"></i> Restaurants</button>
+        <button id = "places"><i class="fas fa-utensils"></i> Recipes</button>
       </div>
       <div class="container">
         <div class="content-left">
-          <h1 id="info-title">What's the weather like?</h1>
-          <p id="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div id="City">
+            <h2> What's the Weather Like? </h2>
+            <h5 id="info-title">Enter City Name</h5>
+            <div class="row form-group form-inline">
+              <input type="text" name="city" id="city" class="form-control", placeholder="City Name">
+              <button id="search_city" class="btn btn-primary">Search City</button>
+            </div>
+            <div id="show"></div>
+          </div>
+          <div id="Recipe">
+            <h2> Want to Find a Recipe? </h2>
+            <h5 id="recipe-title">Search by Food Name</h5>
+            <div id="rec" class="row form-group form-inline">
+              <input type="text" name="recipes" id="recipes" class="form-control", placeholder="Search for a recipe">
+              <button id="search_recipe" class="btn btn-primary">Search Recipe</button>
+            </div>
+            <div id="show_recipe"></div>
+            <a href="" id="source_link"></a>
+          </div>
         </div>
         <div class="content-right">
-          <img src="images/img.png">
+          <div id="icons">
+            <img id="icons" src="images/icons.jpg">
+          </div>
+          <div id="food">
+            <img id="food" src="images/food.jpg">
+          </div>
         </div>
       </div>
     </div>
